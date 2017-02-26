@@ -9,11 +9,12 @@
  */
 
 module.exports = function (THREE) {
-	THREE.STLExporter = function () {};
+	
+	var STLExporter = function () {};
 
-	THREE.STLExporter.prototype = {
+	STLExporter.prototype = {
 
-		constructor: THREE.STLExporter,
+		constructor: STLExporter,
 
 		parse: ( function () {
 
