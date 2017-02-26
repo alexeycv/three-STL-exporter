@@ -6,7 +6,9 @@ This version of STL Exporter tested on THREE.js r68, r70 and r79 and include sup
 
 ## Installation
 
-paste 'https://github.com/donGoG/three-STLexporter/tarball/master' in package.json dependencies
+paste 
+	"three-stl-exporter": "https://github.com/donGoG/three-STL-exporter/tarball/master" 
+in package.json dependencies
 
 ## Authors 
 
