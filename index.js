@@ -154,4 +154,6 @@ module.exports = function (THREE) {
 			};
 		}() )
 	};
+
+	return STLExporter;
 }
