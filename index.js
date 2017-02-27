@@ -156,7 +156,7 @@ module.exports = function (THREE) {
 				var output = '';
 
 				output += 'solid exported\n';
-
+				console.log(args)
 				scene.traverse( function ( object ) {
 					if ( object instanceof THREE.Mesh ) {
 
