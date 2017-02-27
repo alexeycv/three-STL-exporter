@@ -156,15 +156,15 @@ module.exports = function (THREE) {
 				var output = '';
 
 				output += 'solid exported\n';
-				console.log(args)
+
 				scene.traverse( function ( object ) {
 					if ( object instanceof THREE.Mesh ) {
 
 						// if object is hidden - exit
 						if(object.visible == false) return; 
-						else if (args.length > 1 ) {
-							console.log("arg length > 1", args)
-							for(var i=1; i<args.length; i++){
+						else if (args.length > 0 ) {
+							console.log("arg length > 0", args)
+							for(var i=0; i<args.length; i++){
 								if(object.name == args[i]) return; 
 								console.log("object name", object.name)
 								console.log("argument value", args[i])
