@@ -151,7 +151,7 @@ module.exports = function (THREE) {
 			var vector = new THREE.Vector3();
 			var normalMatrixWorld = new THREE.Matrix3();
 
-			return function ( scene ) {
+			return function ( scene, args ) {
 
 				var output = '';
 
@@ -162,6 +162,11 @@ module.exports = function (THREE) {
 
 						// if object is hidden - exit
 						if(object.visible == false) return; 
+						else if (arguments.length > 1 ) {
+							for(var i=1; i<arguments.length; i++){
+								if(object.name == arguments[i]) return; 
+							}
+						}
 
 						var geometry = object.geometry;
 						var matrixWorld = object.matrixWorld;
