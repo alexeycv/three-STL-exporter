@@ -163,8 +163,11 @@ module.exports = function (THREE) {
 						// if object is hidden - exit
 						if(object.visible == false) return; 
 						else if (arguments.length > 1 ) {
+							console.log("arg length > 1", arguments)
 							for(var i=1; i<arguments.length; i++){
 								if(object.name == arguments[i]) return; 
+								console.log("object name", object.name)
+								console.log("argument value", arguments[i])
 							}
 						}
 
